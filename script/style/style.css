@@ -1,0 +1,35 @@
+/* style.css */
+/* Author: Hellen Beatrice Apolot */
+/* Date: 01/06/2026 */
+/* Description: Adds styling and simple animation to the JavaScript module demo */
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  color: #333;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #0066cc;
+  animation: bounce 3s infinite;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Bounce animation for output text */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
